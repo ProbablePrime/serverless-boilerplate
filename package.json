@@ -1,0 +1,27 @@
+{
+  "name": "example.com-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProbablePrime/serverless-boilerplate.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ProbablePrime/serverless-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ProbablePrime/serverless-boilerplate#readme",
+  "dependencies": {
+    "serverless-kms-secrets": "^1.0.2",
+    "serverless": "^1.26.0",
+    "serverless-plugin-reducer": "^3.0"
+  },
+  "devDependencies": {
+  }
+}
