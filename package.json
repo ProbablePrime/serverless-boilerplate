@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/ProbablePrime/serverless-boilerplate#readme",
   "dependencies": {
-    "serverless-kms-secrets": "^1.0.2",
+    "middy": "^0.9.1",
     "serverless": "^1.26.0",
+    "serverless-kms-secrets": "^1.0.2",
     "serverless-plugin-reducer": "^3.0"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
