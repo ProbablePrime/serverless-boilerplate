@@ -9,11 +9,16 @@ package:
 plugins:
   - serverless-plugin-reducer
   - serverless-kms-secrets
+  - serverless-pseudo-parameters
+  - serverless-prune-plugin
 
 custom:
   serverless-kms-secrets:
   #  secretsFile: kms-secrets.${opt:stage, self:provider.stage}.${opt:region, self:provider.region}.yml 
   #kmsSecrets: ${file(kms-secrets.${opt:stage, self:provider.stage}.${opt:region, self:provider.region}.yml)}
+  prune:
+    automatic: true
+    number: 3
 
 provider:
   name: aws
