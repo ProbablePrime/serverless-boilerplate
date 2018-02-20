@@ -3,14 +3,12 @@ service: api.example.com
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
 # frameworkVersion: "=X.X.X"
-package:
-  individually: true
 
 plugins:
-  - serverless-plugin-reducer
   - serverless-kms-secrets
   - serverless-pseudo-parameters
   - serverless-prune-plugin
+  - serverless-webpack
 
 custom:
   serverless-kms-secrets:
