@@ -15,8 +15,7 @@
         "sourceMap": true,
         "target": "es2015",
         "outDir": "lib",
-        "lib": [
-        ],
+        "lib": [],
         "types": ["node", "mocha", "sinon", "sinon-chai"],
         "typeRoots": ["node_modules/@types"],
         "baseUrl": ".",
