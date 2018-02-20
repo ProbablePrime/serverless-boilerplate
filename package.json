@@ -1,48 +1,49 @@
 {
-    "name": "example.com-service",
-    "version": "1.0.0",
-    "private": true,
-    "description": "",
-    "main": "handler.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "lint": "tslint -c tslint.json --project tsconfig.json \"src/**/*.ts\" \"test/**/*.ts\"",
-        "fmt:javascript": "prettier --parser babylon --trailing-comma es5 --write \"*.js\"",
-        "fmt:typescript": "prettier --write \"src/**/*.ts\"",
-        "fmt:json": "prettier --parser json --write \"**/*.json\"",
-        "fmt": "npm run fmt:javascript && npm run fmt:typescript && npm run fmt:json"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/ProbablePrime/serverless-boilerplate.git"
-    },
-    "author": "",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/ProbablePrime/serverless-boilerplate/issues"
-    },
-    "homepage": "https://github.com/ProbablePrime/serverless-boilerplate#readme",
-    "dependencies": {
-        "middy": "^0.9.1",
-        "serverless": "^1.26.0",
-        "serverless-kms-secrets": "^1.0.2",
-        "serverless-prune-plugin": "^1.3.0",
-        "serverless-pseudo-parameters": "^1.4.0",
-        "serverless-webpack": "^4.3.0",
-        "webpack": "^3.11.0"
-    },
-    "devDependencies": {
-        "@types/node": "^9.4.6",
-        "rimraf": "^2.6.2",
-        "tslint": "^5.9.1",
-        "tslint-microsoft-contrib": "5.0.3",
-        "typescript": "^2.7.2"
-    },
-    "prettier": {
-        "parser": "typescript",
-        "tabWidth": 4,
-        "singleQuote": true,
-        "trailingComma": "all",
-        "printWidth": 100
-    }
+  "name": "example.com-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint -c tslint.json --project tsconfig.json \"src/**/*.ts\" \"test/**/*.ts\"",
+    "fmt:javascript": "prettier --parser babylon --trailing-comma es5 --write \"*.js\"",
+    "fmt:typescript": "prettier --write \"src/**/*.ts\"",
+    "fmt:json": "prettier --parser json --write \"**/*.json\"",
+    "fmt": "npm run fmt:javascript && npm run fmt:typescript && npm run fmt:json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProbablePrime/serverless-boilerplate.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ProbablePrime/serverless-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ProbablePrime/serverless-boilerplate#readme",
+  "dependencies": {
+    "middy": "^0.9.1",
+    "serverless": "^1.26.0",
+    "serverless-kms-secrets": "^1.0.2",
+    "serverless-prune-plugin": "^1.3.0",
+    "serverless-pseudo-parameters": "^1.4.0",
+    "serverless-webpack": "^4.3.0",
+    "webpack": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.6",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.9.1",
+    "tslint-microsoft-contrib": "5.0.3",
+    "typescript": "^2.7.2",
+    "uglifyjs-webpack-plugin": "^1.2.0"
+  },
+  "prettier": {
+    "parser": "typescript",
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "printWidth": 100
+  }
 }
