@@ -4,6 +4,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const { CheckerPlugin } = require('awesome-typescript-loader');
 
 module.exports = {
+    target:'node',
     entry: slsw.lib.entries,
     resolve: {
         extensions: ['.ts'],

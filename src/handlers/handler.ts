@@ -1,10 +1,9 @@
-'use strict';
-
-module.exports.hello = (event, context, callback) => {
+import { malm, sum } from '../common/utils';
+export const hello = (event: any, _: any, callback: any) => {
     const response = {
         statusCode: 200,
         body: JSON.stringify({
-            message: 'Go Serverless v1.0! Your function executed successfully!',
+            message: `Go Serverless v1.0! Your function executed successfully! ${malm()} ${sum(1,4)}!`,
             input: event,
         }),
     };

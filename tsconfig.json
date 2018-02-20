@@ -14,14 +14,14 @@
         "module": "es2015",
         "sourceMap": true,
         "target": "es2015",
-        "outDir": "lib",
-        "lib": [],
-        "types": ["node", "mocha", "sinon", "sinon-chai"],
+        "outDir": "dist",
+        "types": ["node"],
         "typeRoots": ["node_modules/@types"],
         "baseUrl": ".",
         "paths": {
             "*": ["./types/*"]
-        }
+        },
+        "skipLibCheck": true
     },
     "exclude": ["node_modules", "test", "dist", "lib", "**/*.spec.ts"]
 }
