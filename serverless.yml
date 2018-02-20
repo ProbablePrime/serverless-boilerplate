@@ -10,9 +10,12 @@ plugins:
   - serverless-prune-plugin
   - serverless-webpack
 
+package:
+  individually: true
+
 custom:
   serverless-kms-secrets:
-  #  secretsFile: kms-secrets.${opt:stage, self:provider.stage}.${opt:region, self:provider.region}.yml 
+  #  secretsFile: kms-secrets.${opt:stage, self:provider.stage}.${opt:region, self:provider.region}.yml
   #kmsSecrets: ${file(kms-secrets.${opt:stage, self:provider.stage}.${opt:region, self:provider.region}.yml)}
   prune:
     automatic: true
@@ -25,7 +28,7 @@ provider:
     - Effect: Allow
       Action:
       - KMS:Decrypt
-      Resource: ${self:custom.kmsSecrets.keyArn} 
+      Resource: ${self:custom.kmsSecrets.keyArn}
 #    - Effect: "Allow"
 #      Action:
 #        - "s3:ListBucket"
